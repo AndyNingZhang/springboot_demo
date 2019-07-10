@@ -29,7 +29,7 @@ public class HelloSender {
 
     public void send() {
         String context = "hello " + new Date();
-        log.info("Sender:" + context);
+        log.info("Sender发送消息:" + context);
         this.amqpTemplate.convertAndSend("hello", context);
     }
 }
