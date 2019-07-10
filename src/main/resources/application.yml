@@ -1,0 +1,21 @@
+server:
+  context-path: /springboot_test
+  port: 8080
+name: 小明
+redis:
+        host: 127.0.0.1
+        port: 6379
+        password: pass1234
+        pool:
+          max-active: 100
+          max-idle: 10
+          max-wait: 100000
+        timeout: 0
+
+
+
+rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: guset
+    password: guset
